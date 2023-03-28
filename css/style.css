@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  background-image: linear-gradient(rgb(132, 0, 204), rgb(0, 201, 174)) !important;
+}
+
+.HellaCleanLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.jumbotron {
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+nav {
+  height: 55px !important;
+  padding: 0px !important;
+}
+
+.navbarinfo {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto !important;
+  margin-right: 0px !important;
+}
+
+.restorations {
+  width: 1050px;
+  height: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 300px 300px 355.56px 84.44px;
+  grid-template-areas: 
+  "lvbefore lvafter lvready lvready"
+  "lvbefore lvafter lvready lvready"
+  "lvfbfre lvfaftr lvready lvready"
+  "lvfbfre lvfaftr lvbagged hclogo"
+  "lvp lvp lvp lvp"
+  ;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 250px;
+}
+
+.restorations > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+#lvbfre {
+  grid-area: lvbefore;
+}
+
+#lvaftr {
+  grid-area: lvafter;
+}
+
+#lvfbfre {
+  grid-area: lvfbfre;
+}
+
+#lvfaftr {
+  grid-area: lvfaftr;
+}
+
+#lvbggd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  grid-area: lvbagged;
+}
+
+#lvrdy {
+  grid-area: lvready;
+}
+
+#hclogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  grid-area: hclogo;
+}
+
+#lvp {
+  grid-area: lvp;
+}
+
+#lvprice {
+  grid-area: lvprice;
+}
+
+
+
+.snkrtxt {
+  display: grid;
+  grid-template-rows: 20% 30% 50%;
+  grid-template-columns: 70% 30%;
+  grid-template-areas: 
+  "hdw hdw"
+  "hdsub hdsub"
+  "hdp hdprice"
+  ;
+}
+
+#hdtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  grid-area: hdw;
+}
+
+#hdsub {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: left;
+  margin-bottom: 15px;
+  grid-area: hdsub;
+}
+
+#hdlist {
+  font-size: 16px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  grid-area: hdp;
+}
+
+#hdprice {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  grid-area: hdprice;
+}
